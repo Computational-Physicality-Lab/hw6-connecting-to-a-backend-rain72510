@@ -1,0 +1,123 @@
+.fullWidth {
+  width: calc(100vw + 16px);
+  /* width: calc(100vw); */
+  margin-left: -16px;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.wordWrap {
+  word-wrap: break-word;
+}
+
+.detailTitle {
+  margin-top: 3vw;
+  justify-content: flex-start;
+}
+
+.detailTitle p {
+  margin: 0;
+}
+
+.shirtDetail {
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4vw;
+  margin: 3vw;
+}
+
+.shirtDetail img {
+  width: calc(40px + 26vw);
+}
+
+.details {
+  width: 50vw;
+  flex-direction: column;
+  padding: 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.details > div {
+  width: fit-content;
+  height: fit-content;
+  /* align-content: flex-start; */
+  justify-content: flex-start;
+}
+
+.price {
+  color: var(--font-red);
+  font-size: calc(10px + 1.5vw);
+  margin: 0;
+}
+
+.description {
+  color: var(--font-red);
+  font-size: calc(6px + 0.9vw);
+}
+
+.select p {
+  letter-spacing: -1px;
+  font-size: calc(6px + 0.9vw);
+}
+
+.select > div {
+  justify-content: flex-start;
+}
+
+.select > div > p {
+  font-size: medium;
+}
+
+.detailBtn {
+  font-size: calc(6px + 0.9vw);
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+/* .detailBtn:hover {
+  color: white;
+} */
+
+.coloredBtn {
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-color: var(--background-color);
+  border-width: 2px;
+  color: black;
+}
+
+.quantityDropdown {
+  background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-color: var(--background-color);
+  border-width: 2px;
+  border-radius: calc(5px + 0.4vw);
+  
+  margin: 6px;
+  padding: 0 18px 0 18px;
+  height: calc(36px + 1.2vw);
+  /* color: var(--btn-unhover-color); */
+  color: black;
+  font-family: “Open Sans”;
+  font-size: calc(6px + 0.9vw);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.disableBtn:disabled {
+  background-color: #8d8d8d;
+  cursor: default;
+  pointer-events: none;
+}
+
+.textMedium {
+  font-size: medium;
+}

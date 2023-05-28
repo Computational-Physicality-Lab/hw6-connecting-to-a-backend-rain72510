@@ -1,0 +1,60 @@
+.fullWidth {
+  width: calc(100vw + 16px);
+  /* width: calc(100vw); */
+  margin-left: -16px;
+}
+
+.banner {
+  height: 26vw;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#introduction {
+  min-height: 250px;
+  height: fit-content;
+  margin-top: -3px;
+  margin-bottom: 3vw;
+  justify-content: space-evenly;
+}
+
+#introduction > div {
+  background-color: white;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: var(--background-color);
+  border-width: 3px;
+  margin: 1vw 3vw 1vw 3vw;
+  padding: 0 2% 0 2%;
+  width: 35vw;
+  max-width: 400px;
+  min-width: 270px;
+  height: fit-content;
+}
+
+
+#introduction p {
+  font-family: “Open Sans”;
+  font-family: "Catamaran";
+}
+
+.introductionTitle {
+  color: var(--font-red);
+  /* font-size: 14px; */
+
+  font-size: calc(14px + 0.5vw);
+  /* font-size: 2vh; */
+}
+
+.introductionContent {
+  color: #3d3d3d;
+  /* font-size: 10px; */
+  font-size: calc(10px + 0.5vw);
+  line-height: 100%;
+}

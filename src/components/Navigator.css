@@ -1,0 +1,51 @@
+:root {
+  --background-color: #ac2432;
+  --font-red: #c51230;
+  --btn-unhover-color: #c2c2c2;
+  --gray: #555555;
+  /* --window-scrollY: 0; */
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.menu {
+  background-color: white;
+  height: calc(7.75px + 3.2vw);
+  justify-content: space-evenly;
+  margin: 0;
+  /* text-decoration: none; */
+}
+
+.menuItem {
+  width: fit-content;
+  flex-direction: column;
+  display: flex;
+  margin-top: -0.1vw;
+  border-style: none;
+}
+
+.menuItem::after {
+  content: '';
+  width: 100%;
+  height: calc(1.25px + 0.3vw);
+  background-color: white;
+  transition: background-color 0.5s ease-in;
+}
+
+.menuItem:hover::after {
+  background-color: var(--background-color);
+}
+
+.menuLink {
+  text-decoration: none;
+  color: var(--font-red);
+  font-family: "Open Sans";
+  font-weight: 100;
+  font-size: calc(3.75px + 0.9vw);
+}
