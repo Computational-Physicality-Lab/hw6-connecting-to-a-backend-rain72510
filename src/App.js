@@ -95,6 +95,19 @@ function App() {
     return () => unsubscribe();
   }, []);
 
+	useEffect(() => {
+    const handleTabClose = e => {
+			localStorage.removeItem("imgList");
+			localStorage.removeItem("cartItemName");
+    };
+
+    window.addEventListener('beforeunload', handleTabClose);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleTabClose);
+    };
+  }, []);
+
   return (
     <div className='background'>
 			<Header/>
